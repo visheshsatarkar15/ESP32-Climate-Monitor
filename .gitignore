@@ -1,0 +1,4 @@
+arduino_secrets.h
+secrets.h
+.env
+.enc.*h
