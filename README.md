@@ -1,4 +1,4 @@
-# ESP32 Environmental Monitoring System 🌱
+# ESP32 Environmental Monitoring System 
 
 An IoT-based environmental monitoring project built using an ESP32 DevKit V1, DHT22 temperature and humidity sensor, capacitive soil moisture sensor, and Arduino IoT Cloud.
 
@@ -6,14 +6,14 @@ The system measures ambient temperature, relative humidity, and raw soil moistur
 
 ## Features
 
-- 🌡️ Real-time temperature monitoring in °C
-- 💧 Relative humidity monitoring in %
-- 🌱 Capacitive soil moisture sensor integration
-- ☁️ Arduino IoT Cloud connectivity
-- 📊 Cloud-based temperature and humidity visualization
-- 🔌 Analog sensor readings using the ESP32 ADC
-- 🖥️ Serial Monitor output for debugging
-- ⏱️ Periodic sensor readings every 2.5 seconds
+-  Real-time temperature monitoring in °C
+-  Relative humidity monitoring in %
+-  Capacitive soil moisture sensor integration
+-  Arduino IoT Cloud connectivity
+-  Cloud-based temperature and humidity visualization
+-  Analog sensor readings using the ESP32 ADC
+-  Serial Monitor output for debugging
+-  Periodic sensor readings every 2.5 seconds
 
 ## Hardware Requirements
 
@@ -26,23 +26,15 @@ The system measures ambient temperature, relative humidity, and raw soil moistur
 
 ## Wiring
 
-### DHT22 Sensor
+DHT22 SENSOR VCC - ESP32 3V3
+DHT22 SENSOR GND - ESP32 GND
+DHT22 SENSOR DATA - ESP32 GPIO 4
 
-| DHT22 Pin | ESP32 Pin |
-|---|---|
-| VCC (+) | 3V3 |
-| DATA (OUT) | GPIO 4 |
-| GND (-) | GND |
+MOISTURE SENSOR VCC - ESP32 3V3
+MOISTURE SENSOR GND - ESP32 GND
+MOISTURE SENSOR AOUT - ESP32 GPIO 13
 
-### Capacitive Soil Moisture Sensor
-
-| Soil Sensor Pin | ESP32 Pin |
-|---|---|
-| VCC | 3V3 |
-| GND | GND |
-| Analog Output (AO/AOUT) | GPIO 13 |
-
-**Note:** Both sensors share the ESP32's 3.3 V and GND connections. Ensure the connections are secure and the combined current is within the board's power capacity. Never allow the soil sensor's analog output to exceed the ESP32's permitted input voltage.
+Note - Both sensors share the ESP32's 3.3 V and GND connections. Ensure the connections are secure and the combined current is within the board's power capacity. Never allow the soil sensor's analog output to exceed the ESP32's permitted input voltage.
 
 ## Software and Libraries
 
@@ -123,7 +115,7 @@ If credentials are accidentally exposed in a public repository, rotate them imme
 
 ## Technologies Used
 
-`ESP32` `C++` `DHT22` `Capacitive Soil Moisture Sensor` `Arduino IoT Cloud` `Embedded Systems` `IoT`
+ESP32 C++ DHT22 Capacitive Soil Moisture Sensor Arduino IoT Cloud Embedded Systems IoT
 
 ## Author
 
